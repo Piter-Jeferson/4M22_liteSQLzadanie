@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M22_liteSQLzadanie.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="24" Padding="24">
+            <Label
+                Text="Kolekcja Kubków"
+                FontSize="40"
+                HorizontalOptions="Center"/>
+            <Label
+                Text=""
+                x:Name="lblWynik"/>
+            <HorizontalStackLayout Spacing="16" HorizontalOptions="Center">
+                <HorizontalStackLayout Spacing="8">
+                    <Button
+                        Text="Poprzedni"
+                        WidthRequest="100"
+                        Clicked="btnPoprzedniClicked"/>
+                    <Button
+                        Text="Następny"
+                        WidthRequest="100"
+                        Clicked="btnNastpenyClicked"/>
+                </HorizontalStackLayout>
+                <StackLayout  WidthRequest="1" BackgroundColor="LightGray"/>
+                <HorizontalStackLayout Spacing="8">
+                    <Entry
+                        Placeholder="Podaj numer"
+                        x:Name="entNumer"
+                        WidthRequest="160"/>
+                    <Button
+                        Text="Wyświetl"
+                        Clicked="btnWyswietlClicked"/>
+                </HorizontalStackLayout>
+                <StackLayout  WidthRequest="1" BackgroundColor="LightGray"/>
+                <Button
+                    Text="Usuń"
+                    Clicked="btnUsunClicked"
+                    BackgroundColor="Red"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
